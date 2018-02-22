@@ -1,0 +1,252 @@
+/batch
+/config,noeldb,1     ! force off writing results to database
+*get,_wallstrt,active,,time,wall
+! ANSYS input file written by Workbench version 19.0 RELEASE
+! File used for geometry attach: C:\Users\space\AppData\Local\Temp\WB_LAPTOP-D5FLPHK0_Thomas_17736_2\unsaved_project_files\dp0\SYS-3\DM\SYS-3.agdb
+/title,unsaved_project--Static Structural (B5)
+*DIM,_wb_ProjectScratch_dir,string,248
+_wb_ProjectScratch_dir(1) = 'C:\Users\space\AppData\Local\Temp\WB_LAPTOP-D5FLPHK0_Thomas_17736_2\unsaved_project_files\dp0\SYS-3\MECH\'
+*DIM,_wb_SolverFiles_dir,string,248
+_wb_SolverFiles_dir(1) = 'C:\Users\space\AppData\Local\Temp\WB_LAPTOP-D5FLPHK0_Thomas_17736_2\unsaved_project_files\dp0\SYS-3\MECH\'
+*DIM,_wb_userfiles_dir,string,248
+_wb_userfiles_dir(1) = 'C:\Users\space\AppData\Local\Temp\WB_LAPTOP-D5FLPHK0_Thomas_17736_2\unsaved_project_files\user_files\'
+/com,--- Data in consistent MKS units. See Solving Units in the help system for more information.
+/units,MKS
+/nopr
+/wb,file,start              !  signify a WB generated input file
+/prep7
+! Turn off shape checking because checks already performed inside WB mesher.
+! See help system for more information.
+SHPP,OFF,,NOWARN
+/nolist
+etcon,set             ! allow ANSYS to choose best KEYOP's for 180x elements
+/com,*********** Nodes for the whole assembly ***********
+nblock,3,,42
+(1i9,3e20.9e3)
+        1   -5.000000000E-002    5.000000000E-002    0.000000000E+000
+        2   -5.000000000E-002   -5.000000000E-002    0.000000000E+000
+        3    5.000000000E-002    5.000000000E-002    0.000000000E+000
+        4    5.000000000E-002   -5.000000000E-002    0.000000000E+000
+        5   -0.000000000E+000    0.000000000E+000    1.000000000E-001
+        6   -2.500000000E-002    2.500000000E-002    5.000000000E-002
+        7    2.500000000E-002    2.500000000E-002    5.000000000E-002
+        8   -2.500000000E-002   -2.500000000E-002    5.000000000E-002
+        9    2.500000000E-002   -2.500000000E-002    5.000000000E-002
+       10    0.000000000E+000    5.000000000E-002    0.000000000E+000
+       11    3.571428571E-003    3.571428571E-003    0.000000000E+000
+       12   -5.000000000E-002    0.000000000E+000    0.000000000E+000
+       13    0.000000000E+000   -5.000000000E-002    0.000000000E+000
+       14    8.304392558E-003   -3.596880296E-002    2.806239409E-002
+       15   -3.750000000E-002   -3.750000000E-002    2.500000000E-002
+       16    5.000000000E-002    0.000000000E+000    0.000000000E+000
+       17    3.649762412E-002    7.488120580E-003    2.700475177E-002
+       18    3.750000000E-002   -3.750000000E-002    2.500000000E-002
+       19    3.750000000E-002    3.750000000E-002    2.500000000E-002
+       20    8.217942065E-003    3.607264736E-002    2.785470529E-002
+       21    0.000000000E+000    2.500000000E-002    5.000000000E-002
+       22   -3.750000000E-002    3.750000000E-002    2.500000000E-002
+       23   -3.439634954E-002    4.403447058E-003    3.120730092E-002
+       24   -2.170758088E-002    1.831863279E-003    5.658483824E-002
+       25   -1.250000000E-002   -1.250000000E-002    7.500000000E-002
+       26    1.737372436E-003   -2.326262756E-002    5.347474487E-002
+       27    1.250000000E-002   -1.250000000E-002    7.500000000E-002
+       28   -2.500000000E-002    2.500000000E-002    0.000000000E+000
+       29   -2.500000000E-002    0.000000000E+000    0.000000000E+000
+       30   -5.000000000E-002    2.500000000E-002    0.000000000E+000
+       31    2.500000000E-002    2.500000000E-002    0.000000000E+000
+       32    2.500000000E-002    5.000000000E-002    0.000000000E+000
+       33    5.000000000E-002    2.500000000E-002    0.000000000E+000
+       34   -5.000000000E-002   -2.500000000E-002    0.000000000E+000
+       35   -2.937132034E-002   -2.500000000E-002    0.000000000E+000
+       36   -2.500000000E-002   -5.000000000E-002    0.000000000E+000
+       37    2.500000000E-002   -2.500000000E-002    0.000000000E+000
+       38    2.500000000E-002    0.000000000E+000    0.000000000E+000
+       39    5.000000000E-002   -2.500000000E-002    0.000000000E+000
+-1
+/wb,elem,start            !  set before creation of elements
+/com,*********** Elements for Body 1 "Solid" ***********
+et,1,185
+eblock,19,solid,,70
+(19i9)
+        1        1        1        1        0        0        0        0        8        0        1       13       18       37       37       14       14       14       14
+        1        1        1        1        0        0        0        0        8        0        2       14       18       37       37       17       17       17       17
+        1        1        1        1        0        0        0        0        8        0        3       13       37       35       35       14       14       14       14
+        1        1        1        1        0        0        0        0        8        0        4        4       18       37       37       13       13       13       13
+        1        1        1        1        0        0        0        0        8        0        5       17       18       37       37       39       39       39       39
+        1        1        1        1        0        0        0        0        8        0        6        9       18       14       14       17       17       17       17
+        1        1        1        1        0        0        0        0        8        0        7       11       35       37       37       14       14       14       14
+        1        1        1        1        0        0        0        0        8        0        8       13       35       36       36       14       14       14       14
+        1        1        1        1        0        0        0        0        8        0        9        4       37       18       18       39       39       39       39
+        1        1        1        1        0        0        0        0        8        0       10       17       39       37       37       38       38       38       38
+        1        1        1        1        0        0        0        0        8        0       11        9       26       17       17       14       14       14       14
+        1        1        1        1        0        0        0        0        8        0       12       11       23       35       35       14       14       14       14
+        1        1        1        1        0        0        0        0        8        0       13       11       35       23       23       29       29       29       29
+        1        1        1        1        0        0        0        0        8        0       14       14       15       35       35       36       36       36       36
+        1        1        1        1        0        0        0        0        8        0       15       16       39       17       17       38       38       38       38
+        1        1        1        1        0        0        0        0        8        0       16       11       14       17       17       26       26       26       26
+        1        1        1        1        0        0        0        0        8        0       17        7       17        9        9       26       26       26       26
+        1        1        1        1        0        0        0        0        8        0       18       11       31       17       17       38       38       38       38
+        1        1        1        1        0        0        0        0        8        0       19        8       14       15       15       23       23       23       23
+        1        1        1        1        0        0        0        0        8        0       20       14       15       23       23       35       35       35       35
+        1        1        1        1        0        0        0        0        8        0       21        2       36       35       35       15       15       15       15
+        1        1        1        1        0        0        0        0        8        0       22       16       31       38       38       17       17       17       17
+        1        1        1        1        0        0        0        0        8        0       23       11       23       14       14       26       26       26       26
+        1        1        1        1        0        0        0        0        8        0       24       11       17       21       21       26       26       26       26
+        1        1        1        1        0        0        0        0        8        0       25        7       21       17       17       26       26       26       26
+        1        1        1        1        0        0        0        0        8        0       26        7       26        9        9       27       27       27       27
+        1        1        1        1        0        0        0        0        8        0       27       11       17       31       31       20       20       20       20
+        1        1        1        1        0        0        0        0        8        0       28       12       35       29       29       23       23       23       23
+        1        1        1        1        0        0        0        0        8        0       29       21       23       26       26       24       24       24       24
+        1        1        1        1        0        0        0        0        8        0       30       11       28       29       29       23       23       23       23
+        1        1        1        1        0        0        0        0        8        0       31        2       35       34       34       15       15       15       15
+        1        1        1        1        0        0        0        0        8        0       32       11       23       26       26       21       21       21       21
+        1        1        1        1        0        0        0        0        8        0       33       16       33       31       31       17       17       17       17
+        1        1        1        1        0        0        0        0        8        0       34        8       23       26       26       14       14       14       14
+        1        1        1        1        0        0        0        0        8        0       35       21       25       26       26       27       27       27       27
+        1        1        1        1        0        0        0        0        8        0       36       11       21       17       17       20       20       20       20
+        1        1        1        1        0        0        0        0        8        0       37        7       21       26       26       27       27       27       27
+        1        1        1        1        0        0        0        0        8        0       38        7       17       21       21       20       20       20       20
+        1        1        1        1        0        0        0        0        8        0       39       10       11       31       31       20       20       20       20
+        1        1        1        1        0        0        0        0        8        0       40       17       31       20       20       19       19       19       19
+        1        1        1        1        0        0        0        0        8        0       41       12       29       30       30       23       23       23       23
+        1        1        1        1        0        0        0        0        8        0       42       12       35       23       23       34       34       34       34
+        1        1        1        1        0        0        0        0        8        0       43       23       29       30       30       28       28       28       28
+        1        1        1        1        0        0        0        0        8        0       44       11       28       23       23       20       20       20       20
+        1        1        1        1        0        0        0        0        8        0       45       15       23       35       35       34       34       34       34
+        1        1        1        1        0        0        0        0        8        0       46       17       31       19       19       33       33       33       33
+        1        1        1        1        0        0        0        0        8        0       47        8       26       23       23       24       24       24       24
+        1        1        1        1        0        0        0        0        8        0       48       21       26       25       25       24       24       24       24
+        1        1        1        1        0        0        0        0        8        0       49       11       23       21       21       20       20       20       20
+        1        1        1        1        0        0        0        0        8        0       50        5       21        7        7       27       27       27       27
+        1        1        1        1        0        0        0        0        8        0       51        7       19       17       17       20       20       20       20
+        1        1        1        1        0        0        0        0        8        0       52       10       28       11       11       20       20       20       20
+        1        1        1        1        0        0        0        0        8        0       53       10       31       32       32       20       20       20       20
+        1        1        1        1        0        0        0        0        8        0       54       19       32       31       31       20       20       20       20
+        1        1        1        1        0        0        0        0        8        0       55       22       23       30       30       28       28       28       28
+        1        1        1        1        0        0        0        0        8        0       56       19       31       32       32       33       33       33       33
+        1        1        1        1        0        0        0        0        8        0       57        8       24       25       25       26       26       26       26
+        1        1        1        1        0        0        0        0        8        0       58        6       21       24       24       23       23       23       23
+        1        1        1        1        0        0        0        0        8        0       59        6       20       23       23       22       22       22       22
+        1        1        1        1        0        0        0        0        8        0       60       20       23       22       22       28       28       28       28
+        1        1        1        1        0        0        0        0        8        0       61        6       20       21       21       23       23       23       23
+        1        1        1        1        0        0        0        0        8        0       62        5       25       21       21       27       27       27       27
+        1        1        1        1        0        0        0        0        8        0       63       10       22       28       28       20       20       20       20
+        1        1        1        1        0        0        0        0        8        0       64        1       22       30       30       28       28       28       28
+        1        1        1        1        0        0        0        0        8        0       65        3       32       33       33       19       19       19       19
+        1        1        1        1        0        0        0        0        8        0       66        5        6       21       21       24       24       24       24
+        1        1        1        1        0        0        0        0        8        0       67        5       24       21       21       25       25       25       25
+        1        1        1        1        0        0        0        0        8        0       68        1       10       22       22       28       28       28       28
+        1        1        1        1        0        0        0        0        8        0       69       11       37       17       17       14       14       14       14
+        1        1        1        1        0        0        0        0        8        0       70       11       17       37       37       38       38       38       38
+-1
+!Material Id = {E17C67DC-211D-4954-ACB5-3090E139A453}
+/wb,elem,end               !  done creating elements
+/com,*********** Send User Defined Coordinate System(s) ***********
+csys,0
+toffst,273.15,  ! Temperature offset from absolute zero
+/com,*********** Set Reference Temperature ***********
+tref,22.
+/wb,mat,start              !  starting to send materials
+/com,*********** Send Materials ***********
+Temperature = 'TEMP' ! Temperature
+MP,DENS,1,7850,	! kg m^-3
+MP,ALPX,1,1.2e-05,	! C^-1
+MP,C,1,434,	! J kg^-1 C^-1
+MP,KXX,1,60.5,	! W m^-1 C^-1
+MP,RSVX,1,1.7e-07,	! kg m^3 A^-2 s^-3
+MP,EX,1,200000000000,	! Pa
+MP,NUXY,1,0.3,
+MP,MURX,1,10000,
+
+/wb,mat,end                !  done sending materials
+!************************* Model Summary ********************
+!Solid,	Structural Steel,	matid,	1
+!************************* End Model Summary ********************
+! get the diagonal of the bounding box. Needed later for other things
+*get,_xmin,node,,mnloc,x
+*get,_ymin,node,,mnloc,y
+*get,_zmin,node,,mnloc,z
+*get,_xmax,node,,mxloc,x
+*get,_ymax,node,,mxloc,y
+*get,_zmax,node,,mxloc,z
+_ASMDIAG=(_xmax-_xmin)*(_xmax-_xmin)+(_ymax-_ymin)*(_ymax-_ymin)+(_zmax-_zmin)*(_zmax-_zmin)
+_ASMDIAG=SQRT(_ASMDIAG)
+/wb,contact,start          !  starting to send contact
+/wb,contact,end            !  done creating contacts
+/golist
+/wb,load,start             !  starting to send loads
+/gst,on,on
+fini
+*get,_numnode,node,0,count
+*get,_numelem,elem,0,count
+*get, _MAXELEMNUM, elem, 0, NUM, MAX
+*get, _MAXNODENUM, node, 0, NUM, MAX
+*get, _MAXELEMTYPE, etyp, 0, NUM, MAX
+*get, _MAXREALCONST, real, 0, NUM, MAX
+/go
+/wb,load,end               !  done creating loads
+/com,--- Number of total nodes = %_numnode%
+/com,--- Number of contact elements = 0
+/com,--- Number of spring elements = 0
+/com,--- Number of bearing elements = 0
+/com,--- Number of solid elements = 70
+/com,--- Number of condensed parts = 0
+/com,--- Number of total elements = %_numelem%
+*get,_wallbsol,active,,time,wall
+/com,****************************************************************************
+/com,*************************    SOLUTION       ********************************
+/com,****************************************************************************
+/solu
+antype,0                   ! static analysis
+eqsl,sparse,,,,,1
+cntr,print,1               ! print out contact info and also make no initial contact an error
+dmpoption,emat,no             ! Don't combine emat file for DANSYS
+dmpoption,esav,no             ! Don't combine esav file for DANSYS
+nldiag,cont,iter           ! print out contact info each equilibrium iteration
+rescontrol,,none                 ! Do not keep any restart files
+/com,****************************************************
+/com,******************* SOLVE FOR LS 1 OF 1 ****************
+/nopr
+/gopr
+nsub,1,1,1
+time,1.
+outres,erase
+outres,all,none
+outres,nsol,all
+outres,rsol,all
+outres,strs,all
+outres,epel,all
+outres,eppl,all
+stabilize,off                   ! Stabilization turned OFF by user
+! *********** WB SOLVE COMMAND ***********
+! check interactive state
+*get,ANSINTER_,active,,int
+*if,ANSINTER_,ne,0,then
+/eof
+*endif
+solve
+/com *************** Write FE CONNECTORS ********* 
+CEWRITE,file,ce,,INTE
+/com,****************************************************
+/com,*************** FINISHED SOLVE FOR LS 1 *************
+*get,_wallasol,active,,time,wall
+/nopr
+*get,_numnode,node,0,count
+*get,_numelem,elem,0,count
+*get, _MAXELEMNUM, elem, 0, NUM, MAX
+*get, _MAXNODENUM, node, 0, NUM, MAX,,,INTERNAL
+*get, _MAXELEMTYPE, etyp, 0, NUM, MAX
+*get, _MAXREALCONST, real, 0, NUM, MAX
+/gopr
+/post1
+xmlo,ENCODING,ISO-8859-1
+xmlo,parm
+/xml,parm,xml
+fini
+/gopr
+*get,_walldone,active,,time,wall
+_preptime=(_wallbsol-_wallstrt)*3600
+_solvtime=(_wallasol-_wallbsol)*3600
+_posttime=(_walldone-_wallasol)*3600
+_totaltim=(_walldone-_wallstrt)*3600
+/wb,file,end               ! done with WB generated input
